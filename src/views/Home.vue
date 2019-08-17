@@ -1,18 +1,14 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <div>
-        Welcome to Aikikai Singapore
-    </div>
+    <div>Welcome to Aikikai Singapore</div>
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
+import { Component, Vue } from "vue-property-decorator";
 
 @Component({
-  components: {
-  },
+  components: {}
 })
 export default class Home extends Vue {}
 </script>
