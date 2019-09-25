@@ -19,9 +19,7 @@
                   </md-list>
                 </div>
                 <div class="md-toolbar-section-end">
-                  <md-button
-                    class="md-just-icon md-simple md-white md-toolbar-toggle"
-                  >
+                  <md-button class="md-just-icon md-simple md-white md-toolbar-toggle">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -48,9 +46,7 @@
                   <h3 class="md-title">Info Color</h3>
                 </div>
                 <div class="md-toolbar-section-end">
-                  <md-button
-                    class="md-just-icon md-simple md-white md-toolbar-toggle"
-                  >
+                  <md-button class="md-just-icon md-simple md-white md-toolbar-toggle">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -80,9 +76,7 @@
                   <h3 class="md-title">Primary Color</h3>
                 </div>
                 <div class="md-toolbar-section-end">
-                  <md-button
-                    class="md-just-icon md-simple md-white md-toolbar-toggle"
-                  >
+                  <md-button class="md-just-icon md-simple md-white md-toolbar-toggle">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -115,9 +109,7 @@
                   <h3 class="md-title">Navbar with notification</h3>
                 </div>
                 <div class="md-toolbar-section-end">
-                  <md-button
-                    class="md-just-icon md-simple md-white md-toolbar-toggle"
-                  >
+                  <md-button class="md-just-icon md-simple md-white md-toolbar-toggle">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -139,9 +131,9 @@
                           class="md-list-item-router md-list-item-container md-button-clean"
                         >
                           <div class="md-list-item-content">
-                            <md-button class="md-rose md-just-icon md-round"
-                              ><md-icon>email</md-icon></md-button
-                            >
+                            <md-button class="md-rose md-just-icon md-round">
+                              <md-icon>email</md-icon>
+                            </md-button>
                           </div>
                         </a>
                       </li>
@@ -153,11 +145,7 @@
                         >
                           <div class="md-list-item-content">
                             <drop-down direction="down" class="profile-photo">
-                              <div
-                                class="profile-photo-small"
-                                slot="title"
-                                data-toggle="dropdown"
-                              >
+                              <div class="profile-photo-small" slot="title" data-toggle="dropdown">
                                 <img :src="img" alt="Circle Image" />
                               </div>
                               <ul class="dropdown-menu dropdown-menu-right">
@@ -166,14 +154,10 @@
                                   <a href="#pablo" class="dropdown-item">Me</a>
                                 </li>
                                 <li>
-                                  <a href="#pablo" class="dropdown-item"
-                                    >Settings and other stuff</a
-                                  >
+                                  <a href="#pablo" class="dropdown-item">Settings and other stuff</a>
                                 </li>
                                 <li>
-                                  <a href="#pablo" class="dropdown-item"
-                                    >Sign Out</a
-                                  >
+                                  <a href="#pablo" class="dropdown-item">Sign Out</a>
                                 </li>
                               </ul>
                             </drop-down>
@@ -191,9 +175,7 @@
                   <h3 class="md-title">Navbar with profile</h3>
                 </div>
                 <div class="md-toolbar-section-end">
-                  <md-button
-                    class="md-just-icon md-simple md-white md-toolbar-toggle"
-                  >
+                  <md-button class="md-just-icon md-simple md-white md-toolbar-toggle">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -215,9 +197,7 @@
                           class="md-list-item-router md-list-item-container md-button-clean"
                         >
                           <div class="md-list-item-content">
-                            <md-button class="md-rose md-round"
-                              >Register</md-button
-                            >
+                            <md-button class="md-rose md-round">Register</md-button>
                           </div>
                         </a>
                       </li>
@@ -232,9 +212,7 @@
                   <h3 class="md-title">Transparent</h3>
                 </div>
                 <div class="md-toolbar-section-end">
-                  <md-button
-                    class="md-just-icon md-simple md-white md-toolbar-toggle"
-                  >
+                  <md-button class="md-just-icon md-simple md-white md-toolbar-toggle">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -286,14 +264,10 @@ export default {
     };
   },
   props: {
-    image: {
-      type: String,
-      default: require("@/assets/img/bg.jpg")
-    },
-    img: {
-      type: String,
-      default: require("@/assets/img/faces/avatar.jpg")
-    }
+    // img: {
+    //   type: String,
+    //   default: require("@/assets/img/faces/avatar.jpg")
+    // }
   },
   computed: {
     bgImage() {

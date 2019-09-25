@@ -11,11 +11,9 @@
           </div>
           <div class="md-layout">
             <div class="md-layout-item md-size-33">
-              <md-button
-                class="md-success md-block"
-                @click="classicModal = true"
-                ><md-icon>library_books</md-icon> Classic</md-button
-              >
+              <md-button class="md-success md-block" @click="classicModal = true">
+                <md-icon>library_books</md-icon>Classic
+              </md-button>
               <modal v-if="classicModal" @close="classicModalHide">
                 <template slot="header">
                   <h4 class="modal-title">Modal Title</h4>
@@ -45,11 +43,7 @@
 
                 <template slot="footer">
                   <md-button class="md-simple">Nice Button</md-button>
-                  <md-button
-                    class="md-danger md-simple"
-                    @click="classicModalHide"
-                    >Close</md-button
-                  >
+                  <md-button class="md-danger md-simple" @click="classicModalHide">Close</md-button>
                 </template>
               </modal>
             </div>
@@ -87,9 +81,9 @@
 
                 <template slot="popover">
                   <h3 class="popover-header">Popover on top</h3>
-                  <div class="popover-body">
-                    Here will be some very useful information about his popover.
-                  </div>
+                  <div
+                    class="popover-body"
+                  >Here will be some very useful information about his popover.</div>
                 </template>
               </v-popover>
               <v-popover offset="4" placement="bottom">
@@ -97,9 +91,9 @@
 
                 <template slot="popover">
                   <h3 class="popover-header">Popover on bottom</h3>
-                  <div class="popover-body">
-                    Here will be some very useful information about his popover.
-                  </div>
+                  <div
+                    class="popover-body"
+                  >Here will be some very useful information about his popover.</div>
                 </template>
               </v-popover>
               <v-popover offset="8" placement="right">
@@ -107,9 +101,9 @@
 
                 <template slot="popover">
                   <h3 class="popover-header">Popover on right</h3>
-                  <div class="popover-body">
-                    Here will be some very useful information about his popover.
-                  </div>
+                  <div
+                    class="popover-body"
+                  >Here will be some very useful information about his popover.</div>
                 </template>
               </v-popover>
             </div>
@@ -163,8 +157,7 @@
               <slide>
                 <div class="carousel-caption">
                   <h4>
-                    <md-icon>location_on</md-icon>
-                    Somewhere Beyond, United States
+                    <md-icon>location_on</md-icon>Somewhere Beyond, United States
                   </h4>
                 </div>
                 <img :src="carousel1" alt="carousel1" />
@@ -172,8 +165,7 @@
               <slide>
                 <div class="carousel-caption">
                   <h4>
-                    <md-icon>location_on</md-icon>
-                    Yellowstone National Park, United States
+                    <md-icon>location_on</md-icon>Yellowstone National Park, United States
                   </h4>
                 </div>
                 <img :src="carousel2" alt="carousel2" />
@@ -181,8 +173,7 @@
               <slide>
                 <div class="carousel-caption">
                   <h4>
-                    <md-icon>location_on</md-icon>
-                    Yellowstone National Park, United States
+                    <md-icon>location_on</md-icon>Yellowstone National Park, United States
                   </h4>
                 </div>
                 <img :src="carousel3" alt="carousel3" />
@@ -204,10 +195,10 @@ export default {
   data() {
     return {
       classicModal: false,
-      selectedDate: new Date("2018/03/26"),
-      carousel1: require("@/assets/img/nature-2.jpg"),
-      carousel2: require("@/assets/img/nature.jpg"),
-      carousel3: require("@/assets/img/nature-3.jpg")
+      selectedDate: new Date("2018/03/26")
+      //   carousel1: require("@/assets/img/nature-2.jpg"),
+      //   carousel2: require("@/assets/img/nature.jpg"),
+      //   carousel3: require("@/assets/img/nature-3.jpg")
     };
   },
   methods: {
