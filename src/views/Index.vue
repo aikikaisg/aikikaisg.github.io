@@ -5,8 +5,8 @@
         <div class="md-layout-item">
           <div class="image-wrapper">
             <div class="brand">
-              <h1>Aikikai - Singapore Chapter</h1>
-              <h3>Aikido practitioners</h3>
+              <h1>Aikikai (Singapore)</h1>
+              <h3>Aikido</h3>
             </div>
           </div>
         </div>
@@ -17,6 +17,18 @@
       <!-- Keep this raised panel -->
 
       <!-- <div class="section section-basic"> -->
+      <div class="section section-aikido">
+        <div class="container">
+          <div class="title">
+            <h2>About Aikido</h2>
+          </div>
+
+          <!-- <basic-elements></basic-elements> -->
+          <aikido></aikido>
+        </div>
+      </div>
+
+      <!-- <div class="section section-basic"> -->
       <div class="section section-intro">
         <div class="container">
           <div class="title">
@@ -24,19 +36,7 @@
           </div>
 
           <!-- <basic-elements></basic-elements> -->
-          <!-- TODO: Replace with about elements -->
-        </div>
-      </div>
-
-      <!-- <div class="section section-basic"> -->
-      <div class="section section-aikido">
-        <div class="container">
-          <div class="title">
-            <h2>Aikido</h2>
-          </div>
-
-          <!-- <basic-elements></basic-elements> -->
-          <!-- TODO: Replace with Aikido information -->
+          <about></about>
         </div>
       </div>
 
@@ -48,7 +48,7 @@
           </div>
 
           <!-- <basic-elements></basic-elements> -->
-          <!-- TODO: Replace with dojo elements -->
+          <dojo></dojo>
         </div>
       </div>
 
@@ -103,9 +103,15 @@ import Notifications from "./components/NotificationsSection";
 import TypographyImages from "./components/TypographyImagesSection";
 import JavascriptComponents from "./components/JavascriptComponentsSection";
 import { LoginCard } from "@/components";
+import About from "./About";
+import Aikido from "./Aikido";
+import Dojo from "./Dojo";
 
 export default {
   components: {
+    Aikido,
+    About,
+    Dojo,
     BasicElements,
     Navigation,
     SmallNavigation,
@@ -132,34 +138,16 @@ export default {
       leafShow: false
     };
   },
-  methods: {
-    leafActive() {
-      if (window.innerWidth < 768) {
-        this.leafShow = false;
-      } else {
-        this.leafShow = true;
-      }
-    }
-  },
+  methods: {},
   computed: {
     headerStyle() {
       return {
         backgroundImage: `url(${this.image})`
       };
-    },
-    signupImage() {
-      return {
-        backgroundImage: `url(${this.signup})`
-      };
     }
   },
-  mounted() {
-    this.leafActive();
-    window.addEventListener("resize", this.leafActive);
-  },
-  beforeDestroy() {
-    window.removeEventListener("resize", this.leafActive);
-  }
+  mounted() {},
+  beforeDestroy() {}
 };
 </script>
 <style lang="scss">
@@ -174,5 +162,6 @@ export default {
     display: flex;
   }
 }
+
 </style>
 
