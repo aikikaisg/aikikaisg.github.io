@@ -45,9 +45,7 @@
                 <label>Password...</label>
                 <md-input v-model="password"></md-input>
               </md-field>
-              <md-button slot="footer" class="md-simple md-success md-lg">
-                Get Started
-              </md-button>
+              <md-button slot="footer" class="md-simple md-success md-lg">Get Started</md-button>
             </login-card>
           </div>
         </div>
@@ -71,12 +69,7 @@ export default {
       password: null
     };
   },
-  props: {
-    header: {
-      type: String,
-      default: require("@/assets/img/profile_city.jpg")
-    }
-  },
+  props: {},
   computed: {
     headerStyle() {
       return {

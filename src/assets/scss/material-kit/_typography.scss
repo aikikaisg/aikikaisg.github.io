@@ -40,7 +40,7 @@ h6, .h6{
     font-weight: $font-weight-bold;
 }
 
-p{
+p, ol, ul, li{
     font-size: $font-paragraph;
     margin: 0 0 10px;
 }
