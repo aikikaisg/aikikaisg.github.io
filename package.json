@@ -2,7 +2,7 @@
     "name": "aikikai-sg.club",
     "author": "aikikaisg",
     "description": "Aikikai SG",
-    "version": "1.2.0",
+    "version": "1.0.0",
     "private": true,
     "scripts": {
         "serve": "vue-cli-service serve",
